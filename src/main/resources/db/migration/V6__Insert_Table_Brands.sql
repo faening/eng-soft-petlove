@@ -1,0 +1,16 @@
+INSERT INTO brands (name, created_at, updated_at) VALUES ('Royal Canin', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+INSERT INTO brands (name, created_at, updated_at) VALUES ('Purina', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+INSERT INTO brands (name, created_at, updated_at) VALUES ('Hill\'s Science Diet', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+INSERT INTO brands (name, created_at, updated_at) VALUES ('Eukanuba', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+INSERT INTO brands (name, created_at, updated_at) VALUES ('Iams', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+INSERT INTO brands (name, created_at, updated_at) VALUES ('Blue Buffalo', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+INSERT INTO brands (name, created_at, updated_at) VALUES ('Wellness', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+INSERT INTO brands (name, created_at, updated_at) VALUES ('Acana', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+INSERT INTO brands (name, created_at, updated_at) VALUES ('Orijen', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+INSERT INTO brands (name, created_at, updated_at) VALUES ('Taste of the Wild', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+INSERT INTO brands (name, created_at, updated_at) VALUES ('Fromm Family', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+INSERT INTO brands (name, created_at, updated_at) VALUES ('Merrick', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+INSERT INTO brands (name, created_at, updated_at) VALUES ('Pedigree', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+INSERT INTO brands (name, created_at, updated_at) VALUES ('Whiskas', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+INSERT INTO brands (name, created_at, updated_at) VALUES ('Ceasar', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+INSERT INTO brands (name, created_at, updated_at) VALUES ('Friskies', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
