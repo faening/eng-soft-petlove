@@ -20,6 +20,8 @@
 		<java.version>17</java.version>
 		<flyway.version>9.22.3</flyway.version>
 		<springdoc.version>2.2.0</springdoc.version>
+		<junit.version>5.10.0</junit.version>
+		<mockito-junit-jupiter.version>5.6.0</mockito-junit-jupiter.version>
 
 		<!-- MySQL Connection -->
 		<mysql.connector.version>8.2.0</mysql.connector.version>
@@ -32,6 +34,12 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
 		</dependency>
 
 		<dependency>
@@ -74,6 +82,20 @@
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
 			<version>${springdoc.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-api</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-junit-jupiter</artifactId>
+			<version>${mockito-junit-jupiter.version}</version>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
 
