@@ -1,7 +1,6 @@
 package edu.fag.petlove.utils;
 
 import edu.fag.petlove.models.Brand;
-import edu.fag.petlove.models.Product;
 import org.springframework.stereotype.Component;
 
 import java.time.Instant;
@@ -10,12 +9,23 @@ import java.util.Date;
 @Component
 public class BrandUtils {
     public Brand copyAndModify(Brand source, Brand target) {
-        if (target.getName() == null) {
-            target.setName(source.getName());
+        Brand mergedBrand = new Brand();
+
+        if (target.getId() != null) {
+            mergedBrand.setId(target.getId());
+        } else {
+            mergedBrand.setId(source.getId());
         }
-        target.setCreatedAt(source.getCreatedAt());
-        target.setUpdatedAt(Date.from(Instant.now()));
-        return target;
+
+        if (target.getName() != null) {
+            mergedBrand.setName(target.getName());
+        } else {
+            mergedBrand.setName(source.getName());
+        }
+
+        mergedBrand.setCreatedAt(source.getCreatedAt());
+        mergedBrand.setUpdatedAt(Date.from(Instant.now()));
+        return mergedBrand;
     }
 
     public Brand updateTimestamp(Brand brand, Boolean isSaving) {

@@ -15,9 +15,7 @@ public class BrandService extends _GenericService<Brand> {
 
     @Override
     protected Brand updateTimestampBeforeSaving(Brand entity) {
-        entity.setCreatedAt(Date.from(Instant.now()));
-        entity.setUpdatedAt(Date.from(Instant.now()));
-        return entity;
+        return brandUtils.updateTimestamp(entity, false);
     }
 
     @Override
