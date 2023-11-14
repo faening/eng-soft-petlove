@@ -1,0 +1,239 @@
+{
+	"info": {
+		"_postman_id": "c35f4d21-3d73-4020-9f93-def5d3ad6bee",
+		"name": "PetLove API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7391085"
+	},
+	"item": [
+		{
+			"name": "Brands",
+			"item": [
+				{
+					"name": "/ brands",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL_BASE}}/brands",
+							"host": [
+								"{{API_URL_BASE}}"
+							],
+							"path": [
+								"brands"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ brands / :id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL_BASE}}/brands/1",
+							"host": [
+								"{{API_URL_BASE}}"
+							],
+							"path": [
+								"brands",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ brands",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"New Brand\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL_BASE}}/brands",
+							"host": [
+								"{{API_URL_BASE}}"
+							],
+							"path": [
+								"brands"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ brands",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 17,\r\n    \"name\": \"New Brand Updated\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL_BASE}}/brands",
+							"host": [
+								"{{API_URL_BASE}}"
+							],
+							"path": [
+								"brands"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ brands / :id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL_BASE}}/brands/17",
+							"host": [
+								"{{API_URL_BASE}}"
+							],
+							"path": [
+								"brands",
+								"17"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "/ products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL_BASE}}/products",
+							"host": [
+								"{{API_URL_BASE}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ products / :id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL_BASE}}/products/1",
+							"host": [
+								"{{API_URL_BASE}}"
+							],
+							"path": [
+								"products",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ products",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": {\r\n        \"name\": \"Produto Teste\",\r\n        \"description\": \"Produto Teste\",\r\n        \"barCode\": \"7896181781826\",\r\n        \"brand\": {\r\n            \"id\": 1,\r\n            \"name\": \"Royal Canin\",\r\n            \"createdAt\": \"2023-11-14T18:31:59.000+00:00\",\r\n            \"updatedAt\": \"2023-11-14T18:31:59.000+00:00\"\r\n        }\r\n    },\r\n    \"productPackages\": [\r\n        {\r\n            \"name\": \"15 kg\",\r\n            \"price\": 426.61\r\n        }\r\n    ],\r\n    \"productImages\": [\r\n        {\r\n            \"imageUrl\": \"https://images.petz.com.br/fotos/1660162896325.jpg\"\r\n        },\r\n        {\r\n            \"imageUrl\": \"https://images.petz.com.br/fotos/1660162899082.jpg\"\r\n        },\r\n        {\r\n            \"imageUrl\": \"https://images.petz.com.br/fotos/1660162900048.jpg\"\r\n        }\r\n    ],\r\n    \"productSpecifications\": [\r\n        {\r\n            \"name\": \"Idade\",\r\n            \"value\": \"Adulto\"\r\n        },\r\n        {\r\n            \"name\": \"Pet\",\r\n            \"value\": \"Cachorros\"\r\n        },\r\n        {\r\n            \"name\": \"Porte\",\r\n            \"value\": \"Grande\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL_BASE}}/products",
+							"host": [
+								"{{API_URL_BASE}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ products",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": {\r\n        \"id\": 6,\r\n        \"name\": \"BIRLLLLLLLLL\",\r\n        \"description\": \"BIRLLLLLLLLLLLL\",\r\n        \"barCode\": \"0001112223334\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL_BASE}}/products",
+							"host": [
+								"{{API_URL_BASE}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/ products / : id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": {\r\n        \"id\": 6,\r\n        \"name\": \"BIRLLLLLLLLL\",\r\n        \"description\": \"BIRLLLLLLLLLLLL\",\r\n        \"barCode\": \"0001112223334\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL_BASE}}/products/6",
+							"host": [
+								"{{API_URL_BASE}}"
+							],
+							"path": [
+								"products",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
