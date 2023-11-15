@@ -3,6 +3,7 @@ package edu.fag.petlove.services;
 import edu.fag.petlove.models.Brand;
 import edu.fag.petlove.repositories.BrandRepository;
 import edu.fag.petlove.utils.BrandUtils;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,8 +15,9 @@ public class BrandService extends _GenericService<Brand> {
     @Autowired
     BrandUtils brandUtils;
 
-    public BrandService(BrandRepository brandRepository) {
+    public BrandService(BrandRepository brandRepository, BrandUtils brandUtils) {
         super(brandRepository);
+        this.brandUtils = brandUtils;
     }
 
     @Override
