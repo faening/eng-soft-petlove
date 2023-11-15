@@ -80,6 +80,6 @@ O Swagger é uma adição valiosa ao projeto, simplificando o processo de entend
 
 <br>
 
-## Tetes
+## Tetes com jUnit e Mockito
 
 A PetLove API incorpora boas práticas de desenvolvimento por meio de testes unitários utilizando o jUnit 5 e o Mockito. Essas ferramentas são essenciais para garantir a confiabilidade e a estabilidade do código, permitindo a detecção precoce de falhas e facilitando a manutenção do sistema.
