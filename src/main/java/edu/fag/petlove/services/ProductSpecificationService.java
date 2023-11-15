@@ -15,6 +15,10 @@ public class ProductSpecificationService extends _GenericService<ProductSpecific
     @Autowired
     ProductSpecificationUtils productSpecificationUtils;
 
+    public ProductSpecificationService(ProductSpecificationRepository productSpecificationRepository) {
+        super(productSpecificationRepository);
+    }
+
     @Override
     protected ProductSpecification updateTimestampBeforeSaving(ProductSpecification entity) {
         return productSpecificationUtils.updateTimestamp(entity, true);

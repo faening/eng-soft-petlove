@@ -5,6 +5,7 @@ import edu.fag.petlove.repositories.ProductPackageRepository;
 import edu.fag.petlove.utils.ProductPackageUtils;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -14,6 +15,10 @@ public class ProductPackageService extends _GenericService<ProductPackage> {
 
     @Autowired
     ProductPackageUtils productPackageUtils;
+
+    public ProductPackageService(ProductPackageRepository productPackageRepository) {
+        super(productPackageRepository);
+    }
 
     @Override
     protected ProductPackage updateTimestampBeforeSaving(ProductPackage entity) {

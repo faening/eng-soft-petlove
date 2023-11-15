@@ -15,6 +15,10 @@ public class ProductImageService extends _GenericService<ProductImage> {
     @Autowired
     ProductImageUtils productImageUtils;
 
+    public ProductImageService(ProductImageRepository productImageRepository) {
+        super(productImageRepository);
+    }
+
     @Override
     protected ProductImage updateTimestampBeforeSaving(ProductImage entity) {
         return productImageUtils.updateTimestamp(entity, true);
