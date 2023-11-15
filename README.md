@@ -11,6 +11,7 @@ O objetivo principal desta API é explorar o framework Spring Boot, juntamente c
 - Spring Boot 3.1.5
 - FlyWay 9.22.3
 - Swagger 2.2.0
+- jUnit 5.10
 - Java 17
 
 <br>
@@ -76,3 +77,9 @@ http://localhost:8080/swagger-ui/index.html
 No Swagger, você encontrará uma interface interativa que lista todas as rotas disponíveis, parâmetros necessários, formatos de resposta e exemplos práticos. Isso torna a exploração e teste das funcionalidades da API mais intuitivos e acessíveis.
 
 O Swagger é uma adição valiosa ao projeto, simplificando o processo de entender e interagir com a PetLove API. Explore a documentação e aproveite a facilidade que o Swagger proporciona para trabalhar com a API.
+
+<br>
+
+## Tetes
+
+A PetLove API incorpora boas práticas de desenvolvimento por meio de testes unitários utilizando o jUnit 5 e o Mockito. Essas ferramentas são essenciais para garantir a confiabilidade e a estabilidade do código, permitindo a detecção precoce de falhas e facilitando a manutenção do sistema.
